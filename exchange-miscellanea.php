@@ -9,6 +9,10 @@ Author: Doug Penny
 $plugin_path = dirname( __FILE__ );
 require_once $plugin_path . '/leadership-custom-post-type.php';
 
+if ( file_exists( $plugin_path . '/CMB2/init.php' ) ) {
+	require_once $plugin_path .  '/CMB2/init.php';
+}
+
 /*
 Change the post title placeholder text
 */
